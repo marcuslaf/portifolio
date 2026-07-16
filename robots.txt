@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://marcuslaf.com/sitemap.xml
+
+# Robots.txt para Marcus Lafaiete - Portfólio
+# https://marcuslaf.com

@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Básico -->
+    <title>Marcus Lafaiete | Desenvolvedor Full Stack Júnior - JavaScript, Python, Java</title>
+    <meta name="description" content="Portfólio de Marcus Lafaiete, Desenvolvedor Full Stack Júnior em Fortaleza-CE. Especialidades: JavaScript, Python, Java, HTML5, CSS3, APIs REST, Git/GitHub.">
+    <meta name="keywords" content="Desenvolvedor Full Stack, JavaScript, Python, Java, HTML5, CSS3, APIs REST, Git, GitHub, Fortaleza, CE, Portfólio, Web Developer">
+    <meta name="author" content="Marcus Lafaiete">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://marcuslaf.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://marcuslaf.com/">
+    <meta property="og:title" content="Marcus Lafaiete | Desenvolvedor Full Stack Júnior">
+    <meta property="og:description" content="Portfólio de Marcus Lafaiete, Desenvolvedor Full Stack Júnior em Fortaleza-CE. Especialidades: JavaScript, Python, Java.">
+    <meta property="og:image" content="https://marcuslaf.com/foto.jpg">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Marcus Lafaiete - Portfólio">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://marcuslaf.com/">
+    <meta name="twitter:title" content="Marcus Lafaiete | Desenvolvedor Full Stack Júnior">
+    <meta name="twitter:description" content="Portfólio de Marcus Lafaiete, Desenvolvedor Full Stack Júnior em Fortaleza-CE.">
+    <meta name="twitter:image" content="https://marcuslaf.com/foto.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="foto.jpg">
+    <meta name="theme-color" content="#6366f1">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Marcus Lafaiete",
+        "jobTitle": "Desenvolvedor Full Stack Júnior",
+        "url": "https://marcuslaf.com",
+        "image": "https://marcuslaf.com/foto.jpg",
+        "email": "marcuslaf@hotmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Fortaleza",
+            "addressRegion": "CE",
+            "addressCountry": "BR"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/marcuslaf",
+            "https://github.com/marcuslaf"
+        ],
+        "knowsAbout": ["JavaScript", "Python", "Java", "HTML5", "CSS3", "APIs REST", "Git", "GitHub"],
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Centro Universitário UniFatecie"
+        }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de Progresso de Scroll -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+    
+    <!-- Skip Link (Acessibilidade) -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+    <!-- Navegação -->
+    <nav id="navbar" role="navigation" aria-label="Menu principal">
+        <div class="nav-container">
+            <a href="#home" class="logo" aria-label="Marcus Lafaiete - Início">
+                <span class="logo-bracket">&lt;</span>ML<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks" role="menubar">
+                <li role="none"><a href="#home" class="active" role="menuitem">Início</a></li>
+                <li role="none"><a href="#about" role="menuitem">Sobre</a></li>
+                <li role="none"><a href="#skills" role="menuitem">Skills</a></li>
+                <li role="none"><a href="#experience" role="menuitem">Experiência</a></li>
+                <li role="none"><a href="#projects" role="menuitem">Projetos</a></li>
+                <li role="none"><a href="#contact" role="menuitem">Contato</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="home" aria-label="Apresentação">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge" aria-hidden="true">
+                        <span class="badge-dot"></span>
+                        Disponível para oportunidades
+                    </div>
+                    <h1 class="hero-title">
+                        Olá, eu sou <br>
+                        <span class="gradient-text">Marcus Lafaiete</span>
+                    </h1>
+                    <div class="typewriter-container" aria-live="polite">
+                        <span class="typewriter" id="typewriter" aria-label="Desenvolvedor Full Stack Júnior"></span>
+                        <span class="cursor-blink" aria-hidden="true">|</span>
+                    </div>
+                    <p class="hero-description">
+                        Estudante de Engenharia de Software, combinando análise detalhada 
+                        com pensamento criativo para construir soluções web modernas e eficientes.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <span class="btn-icon" aria-hidden="true">&#9993;</span>
+                            Fale Comigo
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <span class="btn-icon" aria-hidden="true">&lt;/&gt;</span>
+                            Ver Projetos
+                        </a>
+                    </div>
+                    <div class="hero-social" role="list" aria-label="Redes sociais">
+                        <a href="https://www.linkedin.com/in/marcuslaf" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn" role="listitem">
+                            <span aria-hidden="true">in</span>
+                        </a>
+                        <a href="https://github.com/marcuslaf" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub" role="listitem">
+                            <span aria-hidden="true">GH</span>
+                        </a>
+                        <a href="mailto:marcuslaf@hotmail.com" class="social-icon" aria-label="Enviar e-mail" role="listitem">
+                            <span aria-hidden="true">&#9993;</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <div class="image-glow" aria-hidden="true"></div>
+                        <img src="foto.jpg" alt="Marcus Lafaiete - Desenvolvedor Full Stack Júnior" width="380" height="380" loading="eager">
+                        <div class="image-ring" aria-hidden="true"></div>
+                    </div>
+                    <div class="floating-card card-tech" aria-hidden="true">
+                        <div class="card-icon">&#60;/&#62;</div>
+                        <div class="card-text">Full Stack</div>
+                        <div class="card-subtext">Developer</div>
+                    </div>
+                    <div class="floating-card card-location" aria-hidden="true">
+                        <div class="card-icon">&#9906;</div>
+                        <div class="card-text">Fortaleza</div>
+                        <div class="card-subtext">CE - Brasil</div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator" aria-hidden="true">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Role para baixo</span>
+            </div>
+        </section>
+
+        <!-- Sobre Section -->
+        <section class="about" id="about" aria-labelledby="about-title">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag" aria-hidden="true">&#9734; Sobre Mim</span>
+                    <h2 class="section-title" id="about-title">Quem sou eu</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-highlight">
+                            Sou <strong>Desenvolvedor Full Stack Júnior</strong> em formação, estudante de 
+                            <strong>Engenharia de Software</strong>, com experiência em desenvolvimento web 
+                            utilizando HTML5, CSS3, JavaScript, Python e Java.
+                        </p>
+                        <p>
+                            Minha trajetória profissional passou por áreas que fortaleceram competências essenciais 
+                            para a tecnologia, como atenção aos detalhes, organização, resolução de problemas, 
+                            comunicação e foco na experiência do usuário.
+                        </p>
+                        <p>
+                            Atualmente desenvolvo projetos voltados para aplicações web, integração com APIs REST, 
+                            versionamento com Git/GitHub e boas práticas de desenvolvimento.
+                        </p>
+                        <div class="about-cta">
+                            <a href="#contact" class="btn btn-primary">
+                                <span class="btn-icon" aria-hidden="true">&#9734;</span>
+                                Vamos Conversar
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about-cards" role="list">
+                        <div class="info-card" role="listitem">
+                            <div class="info-icon" aria-hidden="true">&#9733;</div>
+                            <div class="info-content">
+                                <h4>Formação</h4>
+                                <p>Engenharia de Software</p>
+                                <span class="info-badge">Em andamento</span>
+                            </div>
+                        </div>
+                        <div class="info-card" role="listitem">
+                            <div class="info-icon" aria-hidden="true">&#9873;</div>
+                            <div class="info-content">
+                                <h4>Localização</h4>
+                                <p>Fortaleza, CE</p>
+                                <span class="info-badge">Brasil</span>
+                            </div>
+                        </div>
+                        <div class="info-card" role="listitem">
+                            <div class="info-icon" aria-hidden="true">&#9744;</div>
+                            <div class="info-content">
+                                <h4>Experiência</h4>
+                                <p>1+ anos</p>
+                                <span class="info-badge">Total</span>
+                            </div>
+                        </div>
+                        <div class="info-card" role="listitem">
+                            <div class="info-icon" aria-hidden="true">&#9734;</div>
+                            <div class="info-content">
+                                <h4>Idiomas</h4>
+                                <p>Português</p>
+                                <span class="info-badge">Nativo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills" aria-labelledby="skills-title">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag" aria-hidden="true">&lt;/&#62; Habilidades</span>
+                    <h2 class="section-title" id="skills-title">Minhas competências</h2>
+                </div>
+                
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <span aria-hidden="true">&#9744;</span> Frontend & UI
+                    </h3>
+                    <div class="skills-grid" role="list">
+                        <div class="skill-card" role="listitem">
+                            <div class="skill-icon html-icon" aria-hidden="true">HTML5</div>
+                            <div class="skill-info">
+                                <h4>HTML5</h4>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card" role="listitem">
+                            <div class="skill-icon css-icon" aria-hidden="true">CSS3</div>
+                            <div class="skill-info">
+                                <h4>CSS3</h4>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card" role="listitem">
+                            <div class="skill-icon js-icon" aria-hidden="true">JS</div>
+                            <div class="skill-info">
+                                <h4>JavaScript</h4>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card" role="listitem">
+                            <div class="skill-icon bs-icon" aria-hidden="true">BS</div>
+                            <div class="skill-info">
+                                <h4>Bootstrap</h4>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-progress" data-progress="70"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <span aria-hidden="true">&#9746;</span> Backend & Ferramentas
+                    </h3>
+                    <div class="skills-grid" role="list">
+                        <div class="skill-card" role="listitem">
+                            <div class="skill-icon py-icon" aria-hidden="true">PY</div>
+                            <div class="skill-info">
+                                <h4>Python</h4>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-progress" data-progress="70"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card" role="listitem">
+                            <div class="skill-icon java-icon" aria-hidden="true">JV</div>
+                            <div class="skill-info">
+                                <h4>Java</h4>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-progress" data-progress="65"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card" role="listitem">
+                            <div class="skill-icon git-icon" aria-hidden="true">GIT</div>
+                            <div class="skill-info">
+                                <h4>Git/GitHub</h4>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card" role="listitem">
+                            <div class="skill-icon api-icon" aria-hidden="true">API</div>
+                            <div class="skill-info">
+                                <h4>APIs REST</h4>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <span aria-hidden="true">&#9733;</span> Competências Comportamentais
+                    </h3>
+                    <div class="soft-skills" role="list">
+                        <span class="soft-skill-tag" role="listitem">Resolução de Problemas</span>
+                        <span class="soft-skill-tag" role="listitem">Lógica de Programação</span>
+                        <span class="soft-skill-tag" role="listitem">Pensamento UX/UI</span>
+                        <span class="soft-skill-tag" role="listitem">Trabalho em Equipe</span>
+                        <span class="soft-skill-tag" role="listitem">Aprendizado Contínuo</span>
+                        <span class="soft-skill-tag" role="listitem">Comunicação</span>
+                        <span class="soft-skill-tag" role="listitem">Organização</span>
+                        <span class="soft-skill-tag" role="listitem">Atenção aos Detalhes</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiência Section -->
+        <section class="experience" id="experience" aria-labelledby="experience-title">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag" aria-hidden="true">&#9744; Experiência</span>
+                    <h2 class="section-title" id="experience-title">Trajetória Profissional</h2>
+                </div>
+                <div class="timeline" role="list">
+                    <div class="timeline-item current" role="listitem">
+                        <div class="timeline-dot" aria-hidden="true"><span class="pulse"></span></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-badge current-badge">Atual</span>
+                                <span class="timeline-date">Jan 2026 - Presente</span>
+                            </div>
+                            <h3 class="timeline-title">Estudante de Engenharia de Software</h3>
+                            <h4 class="timeline-company">Centro Universitário UniFatecie</h4>
+                            <p class="timeline-description">
+                                Formação em andamento focada em desenvolvimento de software, 
+                                arquitetura de sistemas e boas práticas de programação.
+                            </p>
+                            <div class="timeline-tags" role="list">
+                                <span class="tag" role="listitem">Engenharia</span>
+                                <span class="tag" role="listitem">Software</span>
+                                <span class="tag" role="listitem">Arquitetura</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" role="listitem">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-date">Out 2021 - Out 2024</span>
+                            </div>
+                            <h3 class="timeline-title">Caixa</h3>
+                            <h4 class="timeline-company">Supermercado Cometa</h4>
+                            <ul class="timeline-list">
+                                <li>&#10003; Atendimento ao público</li>
+                                <li>&#10003; Operação de caixa</li>
+                                <li>&#10003; Resolução de demandas em tempo real</li>
+                            </ul>
+                            <p class="timeline-description">
+                                Desenvolvimento de habilidades em comunicação, resolução de problemas, 
+                                organização, gestão de prioridades e tomada de decisão sob pressão.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" role="listitem">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-date">Jul 2010 - Jul 2019</span>
+                            </div>
+                            <h3 class="timeline-title">Diagramador</h3>
+                            <h4 class="timeline-company">SATE - UAB - UECE</h4>
+                            <ul class="timeline-list">
+                                <li>&#10003; Diagramação de materiais educacionais</li>
+                                <li>&#10003; Clareza visual e organização</li>
+                                <li>&#10003; Foco na experiência do usuário</li>
+                            </ul>
+                            <p class="timeline-description">
+                                Competências em design, usabilidade, atenção aos detalhes 
+                                e estruturação de conteúdo para meios impressos e digitais.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formação Section -->
+        <section class="education" id="education" aria-labelledby="education-title">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag" aria-hidden="true">&#9733; Formação</span>
+                    <h2 class="section-title" id="education-title">Educação</h2>
+                </div>
+                <div class="education-grid" role="list">
+                    <div class="education-card current" role="listitem">
+                        <div class="edu-icon" aria-hidden="true">&#9744;</div>
+                        <div class="edu-content">
+                            <span class="edu-period">Jan 2026 - Dez 2029</span>
+                            <h3>Bacharelado em Engenharia de Software</h3>
+                            <h4>Centro Universitário UniFatecie</h4>
+                            <span class="edu-status">Em andamento</span>
+                        </div>
+                    </div>
+                    <div class="education-card" role="listitem">
+                        <div class="edu-icon" aria-hidden="true">&#9734;</div>
+                        <div class="edu-content">
+                            <span class="edu-period">Abr 2024 - Mai 2025</span>
+                            <h3>Tecnologia da Informação</h3>
+                            <h4>Infinity School Fortaleza</h4>
+                            <span class="edu-status completed">Concluído</span>
+                        </div>
+                    </div>
+                    <div class="education-card" role="listitem">
+                        <div class="edu-icon" aria-hidden="true">&#9998;</div>
+                        <div class="edu-content">
+                            <span class="edu-period">Ensino Médio</span>
+                            <h3>Ensino Médio Completo</h3>
+                            <h4>Colégio Filgueiras Lima</h4>
+                            <span class="edu-status completed">Concluído</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projetos Section -->
+        <section class="projects" id="projects" aria-labelledby="projects-title">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag" aria-hidden="true">&#128193; Projetos</span>
+                    <h2 class="section-title" id="projects-title">Meus Trabalhos</h2>
+                </div>
+                <div class="projects-grid" role="list">
+                    <!-- Projeto 1: Encurtador de URLs -->
+                    <article class="project-card featured" role="listitem">
+                        <div class="project-image" aria-hidden="true">
+                            <span>&#128279;</span>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header-row">
+                                <h3>Encurtador de URLs</h3>
+                                <span class="project-badge">&#9733; Destaque</span>
+                            </div>
+                            <p>API de produção com rate limiting distribuído (Redis), QR codes, autenticação por API key e métricas de acesso. CI/CD com GitHub Actions.</p>
+                            <div class="project-tags" role="list">
+                                <span role="listitem">Java 25</span>
+                                <span role="listitem">Spring Boot</span>
+                                <span role="listitem">PostgreSQL</span>
+                                <span role="listitem">Redis</span>
+                                <span role="listitem">Docker</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/marcuslaf/encurtador-de-urls" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver código do Encurtador de URLs">&#9744; GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 2: Todo List React -->
+                    <article class="project-card" role="listitem">
+                        <div class="project-image" aria-hidden="true">
+                            <span>&#9989;</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>Gerenciador de Tarefas</h3>
+                            <p>App completo com React 18, testes unitários (Vitest), linting, formatação e pre-commit hooks.</p>
+                            <div class="project-tags" role="list">
+                                <span role="listitem">React 18</span>
+                                <span role="listitem">Vite</span>
+                                <span role="listitem">Tailwind CSS</span>
+                                <span role="listitem">Vitest</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://todo-list-react2025.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver demo do Gerenciador de Tarefas">&#8599; Demo</a>
+                                <a href="https://github.com/marcuslaf/todo-list-react2025" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver código do Todo List">&#9744; GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 3: Jogo da Memória -->
+                    <article class="project-card" role="listitem">
+                        <div class="project-image" aria-hidden="true">
+                            <span>&#127183;</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>Jogo da Memória</h3>
+                            <p>Jogo com 3 níveis, efeitos sonoros (Web Audio API), records no localStorage e animações 3D.</p>
+                            <div class="project-tags" role="list">
+                                <span role="listitem">HTML5</span>
+                                <span role="listitem">CSS3</span>
+                                <span role="listitem">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://desafio-jogo-da-memoria.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver demo do Jogo da Memória">&#8599; Demo</a>
+                                <a href="https://github.com/marcuslaf/desafio-jogo-da-memoria" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver código do Jogo da Memória">&#9744; GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 4: Minimal API .NET -->
+                    <article class="project-card" role="listitem">
+                        <div class="project-image" aria-hidden="true">
+                            <span>&#9881;</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>Minimal API .NET</h3>
+                            <p>API RESTful com ASP.NET Core 8, JWT auth, FluentValidation, Serilog e 28 testes automatizados.</p>
+                            <div class="project-tags" role="list">
+                                <span role="listitem">.NET 8</span>
+                                <span role="listitem">Entity Framework</span>
+                                <span role="listitem">MySQL</span>
+                                <span role="listitem">JWT</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/marcuslaf/minimal-api" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver código da Minimal API">&#9744; GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 5: Conversor de Moedas -->
+                    <article class="project-card" role="listitem">
+                        <div class="project-image" aria-hidden="true">
+                            <span>&#128176;</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>Conversor de Moedas</h3>
+                            <p>App desktop com Java Swing, taxas de câmbio em tempo real via API e operação assíncrona.</p>
+                            <div class="project-tags" role="list">
+                                <span role="listitem">Java</span>
+                                <span role="listitem">Swing</span>
+                                <span role="listitem">Gson</span>
+                                <span role="listitem">API REST</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/marcuslaf/Conversor" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver código do Conversor">&#9744; GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 6: Barbearia AD Araújo -->
+                    <article class="project-card" role="listitem">
+                        <div class="project-image" aria-hidden="true">
+                            <span>&#9986;</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>Barbearia AD Araújo</h3>
+                            <p>Site real desenvolvido para cliente, com design responsivo e foco na experiência do usuário.</p>
+                            <div class="project-tags" role="list">
+                                <span role="listitem">HTML5</span>
+                                <span role="listitem">CSS3</span>
+                                <span role="listitem">JavaScript</span>
+                                <span role="listitem">Projeto Real</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://barbearia-ade-araujo.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver demo da Barbearia">&#8599; Demo</a>
+                                <a href="https://github.com/marcuslaf/barbearia-ade-araujo" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver código da Barbearia">&#9744; GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato Section -->
+        <section class="contact" id="contact" aria-labelledby="contact-title">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag" aria-hidden="true">&#9993; Contato</span>
+                    <h2 class="section-title" id="contact-title">Vamos conversar?</h2>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Entre em contato</h3>
+                        <p>Estou disponível para oportunidades, projetos e parcerias. Vamos criar algo incrível juntos!</p>
+                        
+                        <div class="contact-cards-grid" role="list">
+                            <a href="mailto:marcuslaf@hotmail.com" class="contact-card" role="listitem">
+                                <div class="contact-card-icon" aria-hidden="true">&#9993;</div>
+                                <div class="contact-card-info">
+                                    <span class="contact-card-label">E-mail</span>
+                                    <span class="contact-card-value">marcuslaf@hotmail.com</span>
+                                </div>
+                                <span class="arrow" aria-hidden="true">&#8594;</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/marcuslaf" target="_blank" rel="noopener noreferrer" class="contact-card" role="listitem">
+                                <div class="contact-card-icon" aria-hidden="true">in</div>
+                                <div class="contact-card-info">
+                                    <span class="contact-card-label">LinkedIn</span>
+                                    <span class="contact-card-value">linkedin.com/in/marcuslaf</span>
+                                </div>
+                                <span class="arrow" aria-hidden="true">&#8594;</span>
+                            </a>
+                            <a href="https://github.com/marcuslaf" target="_blank" rel="noopener noreferrer" class="contact-card" role="listitem">
+                                <div class="contact-card-icon" aria-hidden="true">GH</div>
+                                <div class="contact-card-info">
+                                    <span class="contact-card-label">GitHub</span>
+                                    <span class="contact-card-value">github.com/marcuslaf</span>
+                                </div>
+                                <span class="arrow" aria-hidden="true">&#8594;</span>
+                            </a>
+                            <div class="contact-card" role="listitem">
+                                <div class="contact-card-icon" aria-hidden="true">&#9873;</div>
+                                <div class="contact-card-info">
+                                    <span class="contact-card-label">Localização</span>
+                                    <span class="contact-card-value">Fortaleza, CE - Brasil</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-social" role="list" aria-label="Redes sociais">
+                            <a href="https://www.linkedin.com/in/marcuslaf" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn" role="listitem">
+                                <span aria-hidden="true">in</span>
+                            </a>
+                            <a href="https://github.com/marcuslaf" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub" role="listitem">
+                                <span aria-hidden="true">GH</span>
+                            </a>
+                            <a href="mailto:marcuslaf@hotmail.com" class="social-link" aria-label="Enviar e-mail" role="listitem">
+                                <span aria-hidden="true">&#9993;</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo" aria-hidden="true">
+                    <span class="logo-bracket">&lt;</span>ML<span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">
+                    Desenvolvido por <strong>Marcus Lafaiete</strong> &copy; <span id="currentYear"></span>
+                </p>
+                <div class="footer-links" role="list" aria-label="Redes sociais">
+                    <a href="https://www.linkedin.com/in/marcuslaf" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" role="listitem">
+                        <span aria-hidden="true">in</span>
+                    </a>
+                    <a href="https://github.com/marcuslaf" target="_blank" rel="noopener noreferrer" aria-label="GitHub" role="listitem">
+                        <span aria-hidden="true">GH</span>
+                    </a>
+                    <a href="mailto:marcuslaf@hotmail.com" aria-label="Enviar e-mail" role="listitem">
+                        <span aria-hidden="true">&#9993;</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        &#8593;
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
