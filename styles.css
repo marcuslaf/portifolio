@@ -807,7 +807,7 @@ section {
     left: 24px;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg, var(--accent), var(--gradient-end));
+    background: var(--accent);
     opacity: 0.2;
 }
 
@@ -817,7 +817,7 @@ section {
     left: 24px;
     width: 2px;
     height: var(--timeline-progress, 0);
-    background: linear-gradient(180deg, var(--accent), var(--gradient-end));
+    background: var(--accent);
     transition: height 0.5s ease;
     z-index: 1;
 }
