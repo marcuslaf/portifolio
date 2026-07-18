@@ -808,7 +808,6 @@ section {
     width: 2px;
     height: 100%;
     background: var(--accent);
-    opacity: 0.2;
 }
 
 .timeline::after {
