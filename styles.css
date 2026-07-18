@@ -846,15 +846,14 @@ section {
     transform: scale(1.2);
 }
 
-.timeline-item.current .timeline-dot { background: var(--accent); }
-
 .timeline-item.active .timeline-dot {
     background: var(--accent);
     transform: scale(1.3);
     box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.2);
 }
 
-.timeline-dot .pulse {
+.timeline-item.active .timeline-dot::after {
+    content: '';
     position: absolute;
     inset: -8px;
     border: 2px solid var(--accent);
