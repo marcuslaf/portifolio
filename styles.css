@@ -807,7 +807,8 @@ section {
     left: 24px;
     width: 2px;
     height: 100%;
-    background: var(--border);
+    background: linear-gradient(180deg, var(--accent), var(--gradient-end));
+    opacity: 0.2;
 }
 
 .timeline::after {
