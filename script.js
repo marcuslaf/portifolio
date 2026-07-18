@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initContactForm();
     initCurrentYear();
     initSmoothScroll();
+    initTimelineProgress();
 });
 
 // Barra de Progresso de Scroll
@@ -406,6 +407,51 @@ function initSmoothScroll() {
                 target.setAttribute('tabindex', '-1');
                 target.focus({ preventScroll: true });
             }
+        });
+    });
+}
+
+// Timeline Progress Animation
+function initTimelineProgress() {
+    var timeline = document.querySelector('.timeline');
+    var items = document.querySelectorAll('.timeline-item');
+    if (!timeline || items.length === 0) return;
+
+    var activeItem = null;
+
+    function setActive(item) {
+        if (activeItem === item) return;
+        if (activeItem) activeItem.classList.remove('active');
+        activeItem = item;
+        item.classList.add('active');
+        updateLine(item);
+    }
+
+    function updateLine(item) {
+        if (!item) return;
+        var dot = item.querySelector('.timeline-dot');
+        var timelineRect = timeline.getBoundingClientRect();
+        var dotRect = dot.getBoundingClientRect();
+        var offset = dotRect.top - timelineRect.top + dot.offsetHeight / 2;
+        timeline.style.setProperty('--timeline-progress', offset + 'px');
+    }
+
+    var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                setActive(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.6,
+        rootMargin: '-10% 0px -30% 0px'
+    });
+
+    items.forEach(function(item) { observer.observe(item); });
+
+    window.addEventListener('scroll', function() {
+        requestAnimationFrame(function() {
+            if (activeItem) updateLine(activeItem);
         });
     });
 }
